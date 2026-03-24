@@ -32,4 +32,4 @@ if time_to_insert and ingredients_list:
 
 import requests  
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")  
-st.text(smoothiefroot_response)
+st.text(smoothiefroot_response.json())
